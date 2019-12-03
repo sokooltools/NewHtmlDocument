@@ -12,6 +12,10 @@ a default HTML template file will be created at the selected location such as :
 
 ![Image2](images/image02.png)
 
-Opening the resultant html file will reveal default template data which is easily customized per your requirements : 
+You can name it to whatever you want...
+
+Launching the resultant HTML file in a web browser will reveal default template data easily customizable per your own requirements : 
 
 ![Image3](images/image03.png)
+
+Notice internal to the html file are references to a default set of folders named: 'images', 'scripts', and 'themes'.
