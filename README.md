@@ -1,10 +1,11 @@
 ## New HTML Document
 
-Copy the entire repository folder to your PC then run (double-click) the enclosed command file "<i>install.cmd</i>" 
-to add a new '__Chrome HTML Document__' menu item to the existing right-click '__New__' context menu item 
-built into Windows Explorer.
+To add a new '__Chrome HTML Document__' menu item to the existing right-click '__New__' context menu item which is 
+built into Windows Explorer:
 
-Now whenever right-clicking within a Windows Explorer window and selecting the 'New' | 'Chrome HTML Document' menu item :
+Copy the entire repository to your PC's desktop, then run (double-click) the enclosed command file "<i>install.cmd</i>" and wait for it to complete.
+
+Now whenever right-clicking within a Windows Explorer window and selecting the 'New' - 'Chrome HTML Document' menu item :
 
 ![Image1](images/image01.png)
 
