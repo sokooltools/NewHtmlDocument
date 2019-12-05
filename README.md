@@ -20,9 +20,8 @@ Launching the resultant HTML file in a web browser will reveal some default data
 own requirements : 
 
 ![Image3](images/image03.png)
-
-</br>
-
+  
+  
 Notice internal to the html file are references to a default set of folders named: 'images', 'scripts', and 'themes'.
 These folders are part of the dependencies automatically copied to the "%ProgramFiles(x86)%" folder by the installer.
 
