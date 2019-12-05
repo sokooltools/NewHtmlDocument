@@ -49,6 +49,12 @@ $(document).ready(function() {
 			scrollToElement(this.hash.replace('#',''));
 		});
 	})();
+	
+	$("#help_Toolbar").on("click", function(e) {
+		if (e.ctrlKey)
+			showImageNames();
+		return false;
+	});
 
 	// Add a tooltip to the 'Go to Top' button.
 	$("#help_btnScrollToTop").attr('title', "Click to go to the top of this page...");
@@ -75,35 +81,20 @@ $(document).ready(function() {
 				scrollTop: "-=40"
 			}, "fast");
 		}
-//		if (window.navigator.userAgent.indexOf('MSIE') != -1) {
-//			var url = window.unescape(window.self.location.hash);
-//			if (url != "") {
-//				window.scrollBy(0, -40);
-//			}
-//		}
 	};
 
-
-	//$('#titleee a').trigger('click');
-
-	//	(function updatePage() {
-	//		// Create a dictionary from the table of contents.
-	//		var sel = $("LI.li1 > a");
-	//		var dict = [];
-	//		for (var i = 0; i < sel.length; i++) {
-	//			dict.push({
-	//				key: sel[i].hash,
-	//				value: sel[i].outerText
-	//			});
-	//			$(sel[i]).attr('title', "Click to jump directly to this topic on the page...");
-	//		}
-	//		// Update the page using the dictionary.
-	//		for (var n = 0; n < dict.length; n++) {
-	//			$(dict[n].key).attr('title', "Click to return to top of this page...");
-	//			$(dict[n].key).attr('href', "#top");
-	//			$(dict[n].key).text(dict[n].value);
-	//		}
-	//		$("#btnClose").attr('title', "Click to close this online help...");
-	//	} ());
+	// -------------------------------------------------------------------------------------------
+	// Shows the name of each image on the page. (This is for debug and thus executed manually).
+	// -------------------------------------------------------------------------------------------
+	function showImageNames() {
+		if ($("div").hasClass("centered"))
+			return;
+		const sel1 = $("img");
+		const sel2 = $("[src$='.jpg']");
+		for (let i = 0; i < sel1.length; i++) {
+			sel1[i].outerHTML += `<div class='centered'> [${sel2[i].src.substring(sel2[i].src.lastIndexOf("/") + 1)}]</div>`;
+		}
+		window.console.log(`Now showing ${sel2.length} image names...`);
+	};
 
 });
