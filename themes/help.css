@@ -5,7 +5,7 @@
 
 body, pre, p
 {
-	font-family: "Segoe UI" , "Lucida Console" , "Courier New" , "Arial";
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 body
 {
@@ -27,6 +27,19 @@ img
 	text-align: left;
 	margin-right: 20px;
 	max-width: 630px;
+	position: relative;
+}
+.centered {
+	color: red;
+	font-weight: 800;
+}
+/* Centered text */
+.centeredx {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	float: left;
 }
 
 /* Table of Contents */
