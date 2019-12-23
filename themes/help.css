@@ -3,36 +3,43 @@
    ======================================================================================================= 
 */
 
-body, pre, p
-{
+body,
+pre,
+p {
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-body
-{
+
+pre {
+	font-size:smaller;
+}
+
+body {
 	color: #000000;
 	background-color: #FFFFF1;
 	margin-left: 20px;
 	margin-right: 15px;
 }
-ol
-{
+
+ol {
 	margin-right: 40px;
 }
-a
-{
+
+a {
 	text-decoration: none;
 }
-img
-{
+
+img {
 	text-align: left;
 	margin-right: 20px;
 	max-width: 630px;
 	position: relative;
 }
+
 .centered {
 	color: red;
-	font-weight: 800;
+	font-weight: 750;
 }
+
 /* Centered text */
 .centeredx {
 	position: absolute;
@@ -43,79 +50,85 @@ img
 }
 
 /* Table of Contents */
-td > ol
-{
+td>ol {
 	margin-top: 6px;
 	margin-bottom: 9px;
 	padding-left: 30px;
 }
-.li1
-{
+
+.li1 {
 	margin-top: 1px;
 }
-.li2
-{
+
+.li2 {
 	margin-top: 30px;
 }
-li.li1 > a
-{
+
+li.li1>a {
 	font-size: 12pt;
 }
-li.li1 > a:link
-{
+
+li.li1>a:link {
 	color: blue;
 }
-li.li1 > a:visited
-{
+
+li.li1>a:visited {
 	color: blue;
 }
-li.li1 > a:hover
-{
+
+li.li1>a:hover {
 	color: green;
 }
-li.li2 > a
-{
+
+li.li2>a {
 	font-size: 14pt;
 }
-li.li2 > a:link
-{
+
+li.li2>a:link {
 	color: green;
 }
-li.li2 > a:visited
-{
+
+li.li2>a:visited {
 	color: green;
 }
-li.li2 > a:hover
-{
+
+li.li2>a:hover {
 	color: blue;
 }
-.title
-{
+
+.title {
 	font-size: 16pt;
 	font-weight: 700;
 	width: 95%;
-	padding: 0 10px 5px 10px;
+	padding: 10px 10px 5px 10px;
+	white-space: nowrap;
 }
-#help_toc_table
-{
+
+.hh{
+	font-weight: 700;
+	color:blue;
+}
+
+#help_toc_table {
 	border: #707070 1px solid;
 	padding: 0;
-	margin-top: 10px;
-	margin-bottom: 20px;
+	margin-top: 4rem;
+	margin-bottom: 0;
 	-moz-min-width: 95%;
 	-ms-min-width: 95%;
 	-o-min-width: 95%;
 	-webkit-min-width: 95%;
 	min-width: 95%;
 }
-#help_toc_caption
-{
+
+#help_toc_caption {
 	text-align: left;
-	font-weight: 600;
+	font-weight: 700;
+	font-size: 1.5rem;
 	margin-bottom: 5px;
 }
-#help_Toolbar
-{
+
+#help_Toolbar {
 	width: 100%;
 	padding: 0 10px 0 0;
 	position: fixed;
@@ -126,61 +139,61 @@ li.li2 > a:hover
 	border: thin solid #666666;
 	margin-bottom: 20px;
 }
-#help_Frame
-{
+
+#help_Frame {
+	max-width: 800px;
 	position: relative;
-	top: 50px;
+	top: 10px;
 }
-#help_btnScrollToTop
-{
-	width: 81px;
-	font-size: 7pt;
+
+#help_btnScrollToTop {
+	width: 100px;
+	font-size: .75rem;
 	margin: 2px 10px 0 0;
 }
+
 /* Page Data */
-.td1
-{
+.td1 {
 	width: 50%;
 	border: #707070 1px solid;
-	padding: 0 15px 0 10px;
+	padding: .5rem 0 .5rem .75rem;
 	vertical-align: top;
 }
-.sp1
-{
+
+.sp1 {
 	font-weight: bold;
 	font-size: 12pt;
 }
-.sp2
-{
-	font-family: "Courier New" , "Lucida Console";
+
+.sp2 {
+	font-family: "Courier New", "Lucida Console";
 	font-size: 10pt;
 	vertical-align: 10%;
 }
-.t1
-{
+
+.t1 {
 	margin-top: 5px;
 	margin-bottom: 10px;
 }
-.t2
-{
+
+.t2 {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
 /* Close Button */
-.close
-{
+.close {
 	color: black;
 	cursor: pointer;
 	font-size: 12pt;
 	margin: 2px 4px 2px 0;
 }
-.close:hover
-{
+
+.close:hover {
 	color: green;
 }
-.close_x
-{
+
+.close_x {
 	color: black;
 	cursor: pointer;
 	font-size: 14px;
@@ -193,16 +206,33 @@ li.li2 > a:hover
 	vertical-align: middle;
 	padding: 2px 2px 0 1px;
 }
-.close_x:hover
-{
+
+.close_x:hover {
 	background-color: #666666;
 }
 
+#hb-gotop{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	width:100px;
+	background-color: #EEEEEE;
+	background-color: rgba(238, 238, 238, 0.6);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#99EEEEEE',EndColorStr='#99EEEEEE');
+	text-align:center;
+	padding:5px;
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	cursor:pointer;
+	color:#444;
+	text-decoration:none;
+	border:1px solid #C9C9C9;
+	font-size:9pt;
+} 
 /* Printing */
-@media print
-{
-	.buttonClass
-	{
+@media print {
+	.buttonClass {
 		display: none;
 	}
 }
