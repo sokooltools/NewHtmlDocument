@@ -7,6 +7,7 @@ body,
 pre,
 p {
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
 }
 
 pre {
@@ -16,12 +17,12 @@ pre {
 body {
 	color: #000000;
 	background-color: #FFFFF1;
-	margin-left: 20px;
-	margin-right: 15px;
+	margin-left: 1.25em;
+	margin-right: 1em;
 }
 
 ol {
-	margin-right: 40px;
+	margin-right: 2.5em;
 }
 
 a {
@@ -30,7 +31,7 @@ a {
 
 img {
 	text-align: left;
-	margin-right: 20px;
+	margin-right: 1.3em;
 	max-width: 630px;
 	position: relative;
 }
@@ -51,21 +52,21 @@ img {
 
 /* Table of Contents */
 td>ol {
-	margin-top: 6px;
-	margin-bottom: 9px;
-	padding-left: 30px;
+	margin-top: .3rem;
+	margin-bottom: .56rem;
+	padding-left: 1.9rem;
 }
 
 .li1 {
-	margin-top: 1px;
+	margin-top: 1.9rem;
 }
 
 .li2 {
-	margin-top: 30px;
+	margin-top: 1.9em;
 }
 
 li.li1>a {
-	font-size: 12pt;
+	font-size: .75rem;
 }
 
 li.li1>a:link {
@@ -81,7 +82,7 @@ li.li1>a:hover {
 }
 
 li.li2>a {
-	font-size: 14pt;
+	font-size: .9rem;
 }
 
 li.li2>a:link {
@@ -97,10 +98,10 @@ li.li2>a:hover {
 }
 
 .title {
-	font-size: 16pt;
+	font-size: 1rem;
 	font-weight: 700;
 	width: 95%;
-	padding: 10px 10px 5px 10px;
+	padding: .63rem .63rem .31rem .63rem;
 	white-space: nowrap;
 }
 
@@ -110,7 +111,7 @@ li.li2>a:hover {
 }
 
 #help_toc_table {
-	border: #707070 1px solid;
+	border: #707070 .06rem solid;
 	padding: 0;
 	margin-top: 4rem;
 	margin-bottom: 0;
@@ -125,68 +126,68 @@ li.li2>a:hover {
 	text-align: left;
 	font-weight: 700;
 	font-size: 1.5rem;
-	margin-bottom: 5px;
+	margin-bottom: .3rem;
 }
 
 #help_Toolbar {
 	width: 100%;
-	padding: 0 10px 0 0;
+	padding: 0 .63rem 0 0;
 	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 1000;
 	background: #ffb91d;
 	border: thin solid #666666;
-	margin-bottom: 20px;
+	margin-bottom: 1.3rem;
 }
 
 #help_Frame {
 	max-width: 800px;
 	position: relative;
-	top: 10px;
+	top: .63rem;
 }
 
 #help_btnScrollToTop {
-	width: 100px;
+	width: 6rem;
 	font-size: .75rem;
-	margin: 2px 10px 0 0;
+	margin: .13rem .63rem 0 0;
 }
 
 /* Page Data */
 .td1 {
 	width: 50%;
-	border: #707070 1px solid;
+	border: #707070 .13rem solid;
 	padding: .5rem 0 .5rem .75rem;
 	vertical-align: top;
 }
 
 .sp1 {
 	font-weight: bold;
-	font-size: 12pt;
+	font-size: .75rem;
 }
 
 .sp2 {
 	font-family: "Courier New", "Lucida Console";
-	font-size: 10pt;
+	font-size: .6rem;
 	vertical-align: 10%;
 }
 
 .t1 {
-	margin-top: 5px;
-	margin-bottom: 10px;
+	margin-top: .3rem;
+	margin-bottom: .6rem;
 }
 
 .t2 {
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: .6rem;
+	margin-bottom: .6rem;
 }
 
 /* Close Button */
 .close {
 	color: black;
 	cursor: pointer;
-	font-size: 12pt;
-	margin: 2px 4px 2px 0;
+	font-size: .75rem;
+	margin: .13rem .25rem .13rem 0;
 }
 
 .close:hover {
@@ -196,15 +197,15 @@ li.li2>a:hover {
 .close_x {
 	color: black;
 	cursor: pointer;
-	font-size: 14px;
+	font-size: .88rem;
 	font-family: Aharoni;
 	background-color: #CCCCCC;
 	color: #FF0000;
-	width: 14px;
+	width: .88rem;
 	line-height: initial;
-	outline: 1px solid #999999;
+	outline: .06rem solid #999999;
 	vertical-align: middle;
-	padding: 2px 2px 0 1px;
+	padding: .13rem .13rem 0 .06rem;
 }
 
 .close_x:hover {
@@ -212,23 +213,23 @@ li.li2>a:hover {
 }
 
 #hb-gotop{
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	width:100px;
+	-moz-border-radius: .32rem;
+	-webkit-border-radius: .32rem;
+	border-radius: .32rem;
+	width:.625rem;
 	background-color: #EEEEEE;
 	background-color: rgba(238, 238, 238, 0.6);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#99EEEEEE',EndColorStr='#99EEEEEE');
 	text-align:center;
-	padding:5px;
+	padding:.32rem;
 	position:fixed;
-	bottom:10px;
-	right:10px;
+	bottom:.63rem;
+	right:.63rem;
 	cursor:pointer;
 	color:#444;
 	text-decoration:none;
 	border:1px solid #C9C9C9;
-	font-size:9pt;
+	font-size:.56rem;
 } 
 /* Printing */
 @media print {
